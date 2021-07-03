@@ -1,1 +1,0 @@
-# Verve-Group-case-study
