@@ -1,6 +1,6 @@
 # Verve-Group-case-study
 
-##### 1. Imagine that you were asked to use this dataset to build a classification model, with gender as the target. Look at the information we have given you and identify 3-5 potential problems you can see with the provided dataset that might make building a classification model difficult.
+##### Q1. Imagine that you were asked to use this dataset to build a classification model, with gender as the target. Look at the information we have given you and identify 3-5 potential problems you can see with the provided dataset that might make building a classification model difficult.
 
 #### Problem 1. 
 The first problem that might make building the classification model difficult is the imbalanced dataset. Because there are over twice as many males as females, the model is likely going to favour predicting users as being male.
@@ -15,3 +15,8 @@ Note: If we are able to extract device model (Ex. iPhone 12, oneplus 7T.) inform
 App category and add category have missing values. It is important to handle missing values before model training because some models can handle them (Ex. XGBoost), but some are not.
 #### Problem 6.
 Given the already mentioned issues, a dataset of only 3700 samples is probably too small to allow for training a reliable model. 
+
+##### Q2. Describe briefly how you would find the features that are likely to be the most important for your model.
+A first step in finding the features that are likely to be the most important for the model is to use logic and domain expertise. App category, Ad category, and time spent on the app are the features which may have a significant impact on predicting the gender. App and Ad category are likely to be the most important feature. More specifically, certain  categories may have its users highly skewed toward one of the genders (such as beauty and fashion categories being used more characteristic of women; while sports cars more characteristic of men). 
+
+Next, feature importance analysis we can use some feature selection methods like chi-squared and mutual information. We can also get feature importance by interpreting classification model and observing which variables were picked up by the algorithm as being the most important. Some of the main types of quantifying feature importance are model coefficients and decision trees. 
