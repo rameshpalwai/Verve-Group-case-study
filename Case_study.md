@@ -23,5 +23,6 @@ Next, feature importance analysis can be done by some feature selection methods 
 
 ##### 3. Identify which model you would try first, and at least one advantage and disadvantage of this choice.
 The first model I would try is logistic regression and it can serve as baseline model. Its main benefits are that it is easy to implement and to interpret. It is also fast to train, as well as fast to predict unknown samples with. The main disadvantage is that it assumes linearity between the dependent and independent variables. Therefore, logistic regression is not flexible enough to naturally capture more complex relationships. 
+
 As next step I will try Support Vector Classifier. As they can deal with non linear relationships between data by introducing kernel trick. SVM generally don’t suffer from overfitting problem. On the other hand SVC not suitable for larger data sets and they does not perform very well when the data set has more noise.
 
